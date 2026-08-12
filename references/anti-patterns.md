@@ -21,7 +21,7 @@ Full typography rules: see [typography.md](typography.md). Top 5 most frequent c
 
 Wrong|Correct
 "кавычки" (straight)|«кавычки» (guillemets «ёлочки»)
-Дефис вместо тире: "Москва - столица"|Москва -- столица (em-dash)
+Дефис вместо тире: "Москва - столица"|Москва — столица (em-dash)
 Три точки "..."|Многоточие … (U+2026, single glyph)
 Знак номера: "No." или "#"|№ (знак номера)
 ЭТО НУЖНО СДЕЛАТЬ СЕГОДНЯ, ИНАЧЕ РЕЛИЗ СОРВЁТСЯ|Обычный регистр; одно-два слова прописными не трогать — правило и его карв-ауты в AD-18
@@ -45,7 +45,7 @@ Remaining 27 (split-predicate verb+noun → verb, plus officialese phrases): ful
 
 ## High: Vague Adjectives (11 entries)
 
-Words that add volume but no information. If removing changes nothing -- delete.
+Words that add volume but no information. If removing changes nothing — delete.
 
 Vague|Fix
 Высококачественный продукт|Продукт [конкретное свойство: прочный, быстрый]
@@ -64,7 +64,7 @@ Vague|Fix
 
 Passive hides the actor, making text evasive and bureaucratic.
 
-Carve-out -- the passive says how the product behaves, not what a person did. Not flagged where the verb is something the product, tool or service does by itself and the sentence carries nothing but that: «Предупреждение выводится один раз за сессию», «Токены перестанут приниматься первого сентября», «Поле `updated_at` меняется при каждой записи». Naming the actor there only repeats the thing the page is already about. The verb decides first, so no heading buys the exemption: deciding, checking, reviewing, approving, notifying and sending are done by people, and «информация подлежит рассмотрению в установленные сроки» stays a finding -- naming the регламент beside it names nobody. A passive carried inside a larger point is not a behaviour line -- more of the same behaviour alongside keeps the exemption, an instruction, an inference or a person's commitment in the same sentence breaks it: «сколько запросов обрабатывается», set inside a sentence about what the real question is, stays a finding. A message shown to the reader is the message, not documentation about one: «Ваш запрос не может быть обработан» withholds the cause and the next step -- «Не смогли обработать запрос: истёк срок токена». Nothing else changes, including the default that the passive is fine when the agent is unknown or irrelevant. No row of the table below is exempt -- not one names a machine.
+Carve-out — the passive says how the product behaves, not what a person did. Not flagged where the verb is something the product, tool or service does by itself and the sentence carries nothing but that: «Предупреждение выводится один раз за сессию», «Токены перестанут приниматься первого сентября», «Поле `updated_at` меняется при каждой записи». Naming the actor there only repeats the thing the page is already about. The verb decides first, so no heading buys the exemption: deciding, checking, reviewing, approving, notifying and sending are done by people, and «информация подлежит рассмотрению в установленные сроки» stays a finding — naming the регламент beside it names nobody. A passive carried inside a larger point is not a behaviour line — more of the same behaviour alongside keeps the exemption, an instruction, an inference or a person's commitment in the same sentence breaks it: «сколько запросов обрабатывается», set inside a sentence about what the real question is, stays a finding. A message shown to the reader is the message, not documentation about one: «Ваш запрос не может быть обработан» withholds the cause and the next step — «Не смогли обработать запрос: истёк срок токена». Nothing else changes, including the default that the passive is fine when the agent is unknown or irrelevant. No row of the table below is exempt — not one names a machine.
 
 Passive|Active
 Было принято решение|Мы решили / Руководитель решил
@@ -89,7 +89,7 @@ Bloated|Concise
 По результатам проведённого анализа установлено, что|Анализ показал:
 Необходимо обратить особое внимание на тот факт, что|Обратите внимание:
 Данная информация носит конфиденциальный характер|Информация конфиденциальная
-Если у вас возникнут дополнительные вопросы, вы можете обратиться|Если есть вопросы -- пишите
+Если у вас возникнут дополнительные вопросы, вы можете обратиться|Если есть вопросы — пишите
 Мы придерживаемся мнения о том, что|Считаем, что
 Является ключевым фактором, определяющим|Определяет / Главная причина
 В рамках проводимых мероприятий по улучшению|Чтобы улучшить
@@ -133,7 +133,7 @@ Remaining 17 (период времени, передовой авангард, 
 
 ## Low: Anglicisms (11 entries)
 
-Use Russian when it carries the same meaning. Some anglicisms have no precise equivalent -- those are fine.
+Use Russian when it carries the same meaning. Some anglicisms have no precise equivalent — those are fine.
 
 Anglicism|Russian|Replace when
 Дедлайн|Срок / Крайний срок|Non-IT context

@@ -50,7 +50,7 @@ Pattern: greeting (short) + main point in sentence one. No filler.
 
 | weak|strong |
 |---|---|
-| Добрый день! Как ваши дела? Хотел бы обсудить один момент...|Добрый день! Предлагаю перенести запуск на 20 марта -- нужна ещё неделя на тестирование. |
+| Добрый день! Как ваши дела? Хотел бы обсудить один момент...|Добрый день! Предлагаю перенести запуск на 20 марта — нужна ещё неделя на тестирование. |
 | Здравствуйте! Надеюсь, у вас всё хорошо. Пишу по поводу проекта...|Здравствуйте! Проект задерживается на 5 дней. Причина и план ниже. |
 
 ### Body
@@ -58,7 +58,7 @@ Pattern: greeting (short) + main point in sentence one. No filler.
 7. Bold key terms and deadlines.
 8. Paragraphs: 3–4 sentences max.
 9. Attach files instead of pasting long content inline.
-10. Referencing previous correspondence -- include the relevant quote.
+10. Referencing previous correspondence — include the relevant quote.
 
 ### Closing Sentence
 
@@ -66,7 +66,7 @@ Last sentence answers: who does what, by when.
 
 | weak|strong |
 |---|---|
-| Буду рад обсудить.|Прошу согласовать макет до 18.03. Правки -- до пятницы. |
+| Буду рад обсудить.|Прошу согласовать макет до 18.03. Правки — до пятницы. |
 | Жду вашего ответа.|Ольга, пришлите финальный текст до среды, 19 марта. |
 | Надеюсь на понимание.|Если возражений нет до 15:00 пятницы, запускаем как есть. |
 
@@ -74,9 +74,9 @@ Last sentence answers: who does what, by when.
 
 ## B. Messenger Etiquette
 
-1. **One message = greeting + question + context.** Never send "Привет" and wait. The recipient opens chat and finds nothing actionable.
-2. **No voice messages** unless recipient explicitly agreed. If you must -- add text summary of key points.
-3. **Thread replies in group chats (5+).** No threads? Prefix with topic: "[логистика] Отгрузка перенесена".
+1. **One message = greeting + question + context.** Never send «Привет» and wait. The recipient opens chat and finds nothing actionable.
+2. **No voice messages** unless recipient explicitly agreed. If you must — add text summary of key points.
+3. **Thread replies in group chats (5+).** No threads? Prefix with topic: «[логистика] Отгрузка перенесена».
 4. **Async by default.** No "???" after 10 min silence. Urgent = call.
 
 ### Channel Selection
@@ -97,7 +97,7 @@ Last sentence answers: who does what, by when.
 | servile|respectful |
 |---|---|
 | Не сочтите за дерзость, но мне кажется, возможно, стоило бы...|Предлагаю другой вариант: ... |
-| Простите, что отнимаю ваше драгоценное время...|Есть вопрос по срокам -- займёт пару минут. |
+| Простите, что отнимаю ваше драгоценное время...|Есть вопрос по срокам — займёт пару минут. |
 | Осмелюсь предположить...|Думаю, причина в ... |
 | Если вас не затруднит и будет удобно...|Пришлите, пожалуйста, отчёт до пятницы. |
 
@@ -116,10 +116,10 @@ Last sentence answers: who does what, by when.
 |---|---|
 | First contact, unknown person|Always «вы» |
 | Formal correspondence (clients, partners, officials)|Always «вы» |
-| Internal team IT/startup|Often «ты» by convention -- follow team norms |
+| Internal team IT/startup|Often «ты» by convention — follow team norms |
 | Other person switched to «ты»|May reciprocate, no obligation |
 | Mass emails, mixed audience|Always «вы» |
-| When in doubt|«Вы» -- never offends |
+| When in doubt|«Вы» — never offends |
 
 5. Capitalized «Вы» = additional formality (official letters, senior officials). Lowercase «вы» = normal business email.
 
@@ -128,9 +128,9 @@ Last sentence answers: who does what, by when.
 | hard|soft |
 |---|---|
 | Вам необходимо прислать отчёт.|Пришлите, пожалуйста, отчёт до пятницы. |
-| Вы должны это исправить.|Предлагаю исправить до релиза -- вот что нужно: ... |
-| Я требую объяснений.|Расскажите, пожалуйста, что произошло -- хочу разобраться. |
-| Немедленно перезвоните.|Позвоните, когда будет возможность -- вопрос срочный. |
+| Вы должны это исправить.|Предлагаю исправить до релиза — вот что нужно: ... |
+| Я требую объяснений.|Расскажите, пожалуйста, что произошло — хочу разобраться. |
+| Немедленно перезвоните.|Позвоните, когда будет возможность — вопрос срочный. |
 | Это нужно переделать.|Есть несколько правок. Основное: [конкретика]. |
 
 ---
@@ -195,7 +195,7 @@ Date: [date], [time]
 Participants: [names]
 
 ## Decisions
-1. [Decision] -- rationale if not obvious
+1. [Decision] — rationale if not obvious
 
 ## Action Items
 | # | Task | Owner | Deadline |
@@ -203,14 +203,14 @@ Participants: [names]
 | 1 | [Task] | [Name] | [Date] |
 
 ## Open Questions
-- [Question] -- who investigates, by when
+- [Question] — who investigates, by when
 
 ## Next Meeting
 [Date, time, agenda if known]
 ```
 
 ### Rules
-1. Decisions as statements, not discussion summaries. "Decided to postpone to April 5" -- not "We discussed and considered options..."
+1. Decisions as statements, not discussion summaries. "Decided to postpone to April 5" — not "We discussed and considered options..."
 2. Every action item: exactly one owner + one deadline. "The team" is not an owner.
 3. No decision? Write: "No decision. [Name] will prepare data by [date]."
 
@@ -218,7 +218,7 @@ Participants: [names]
 
 ## F. Saying No Respectfully
 
-Structure: **acknowledge -- decide -- offer alternative**.
+Structure: **acknowledge — decide — offer alternative**.
 
 1. **Acknowledge** the request (show you understood).
 2. **State decision** clearly and early (don't bury "no" in paragraph 3).
@@ -229,13 +229,13 @@ Structure: **acknowledge -- decide -- offer alternative**.
 ### Best Examples
 
 **Declining a meeting:**
-> Не смогу быть 15 марта -- финализирую отчёт. Готов ответить письменно заранее. Пришлите повестку?
+> Не смогу быть 15 марта — финализирую отчёт. Готов ответить письменно заранее. Пришлите повестку?
 
 **Rejecting a proposal:**
-> Спасибо за предложение. Не подходит по бюджету -- лимит распределён. Вернёмся в июне при планировании Q3.
+> Спасибо за предложение. Не подходит по бюджету — лимит распределён. Вернёмся в июне при планировании Q3.
 
 **Denying a deadline extension:**
-> Понимаю, задача сложнее. Перенести дедлайн не получится -- зависит запуск. Давайте упростим скоуп.
+> Понимаю, задача сложнее. Перенести дедлайн не получится — зависит запуск. Давайте упростим скоуп.
 
 ---
 

@@ -1,46 +1,75 @@
 # ru-text brifly
 
-Reusable Hermes/OpenClaw skill for Russian text quality: typography, editing, info-style, UX writing, business correspondence, anti-pattern diagnostics and text scoring.
+Переносимый скилл качества русского текста: типографика, редактура, информационный стиль,
+UX-writing, деловая переписка, диагностика нейросетевого стиля и оценка текста по рубрике.
 
-Based on an independent Russian text quality reference by Arseniy Kamyshev. Credits and recommended reading are listed in [`references/sources.md`](references/sources.md).
+Основан на независимом справочнике по качеству русского текста Арсения Камышева. Благодарности
+и список источников — в [`references/sources.md`](references/sources.md).
 
-## What is included
+## Что внутри
 
-- `SKILL.md` — main skill instructions.
-- `references/typography.md` — Russian typography rules.
-- `references/info-style.md` — clear writing and stop-words.
-- `references/ux-writing.md` — UI and microcopy guidance.
-- `references/business-writing.md` — emails and business correspondence.
-- `references/editorial-grammar.md` — grammar and capitalization.
-- `references/editorial-punctuation.md` — punctuation checks.
-- `references/anti-patterns.md` — diagnostics and common text problems.
-- `references/scoring.md` — quality scoring rubric.
-- `references/sources.md` — attribution and recommended reading.
-- `agents/` — example agent configurations.
+| Файл | О чём |
+|---|---|
+| `SKILL.md` | основные инструкции: always-on-типографика, краткий режим, маршрутизация |
+| `commands/ru-check.md` | команда `/ru-text:ru-check` — вычитка со списком правок |
+| `commands/ru-score.md` | команда `/ru-text:ru-score` — оценка 0–10 по пяти измерениям |
+| `references/typography.md` | правила русской типографики (R1–R96) |
+| `references/info-style.md` | информационный стиль, каталог стоп-слов |
+| `references/ux-writing.md` | интерфейсные тексты и микрокопирайт |
+| `references/business-writing.md` | письма и деловая переписка |
+| `references/editorial-grammar.md` | грамматика, прописные, согласование (разделы C–K) |
+| `references/editorial-punctuation.md` | пунктуация (разделы A–B) |
+| `references/anti-patterns.md` | каталог ошибок по степени тяжести |
+| `references/scoring.md` | рубрика оценки |
+| `references/addenda.md` | индекс свода AD: Neuroslop index и маршрутизация |
+| `references/addenda-rhythm.md` | AD-1, AD-2, AD-17, AD-18 — ритм, пунктуация, знаки |
+| `references/addenda-register.md` | AD-3, AD-4, AD-7…AD-10, AD-14 — регистр ассистента |
+| `references/addenda-substance.md` | AD-5, AD-6, AD-11…AD-13, AD-15, AD-16 — пустота под формой |
+| `references/sources.md` | атрибуция и что читать дальше |
 
-## Install into Hermes
+## Установка
 
-Clone or copy this repository into your Hermes skills directory:
+Hermes:
 
 ```bash
 mkdir -p ~/.hermes/skills/creative
 git clone https://github.com/aigalaersh/ru-text_brifly.git ~/.hermes/skills/creative/ru-text
 ```
 
-Then restart/reload Hermes if your setup does not auto-discover new skills.
+Claude Code:
 
-## Usage
+```bash
+git clone https://github.com/aigalaersh/ru-text_brifly.git ~/.claude/skills/ru-text
+```
 
-Trigger examples:
+Имя каталога должно совпадать с полем `name` в `SKILL.md` — то есть `ru-text`, а не
+`ru-text_brifly`. Если харнесс не подхватывает скиллы сам, перезапустите его.
 
-- «вычитай текст»
-- «проверь русский»
-- «поправь письмо»
-- «причеши текст»
-- `ru-text`
+## Как вызывается
 
-The skill also contains an always-on typography layer for Russian output.
+- «вычитай текст», «проверь русский», «поправь письмо», «причеши текст», `ru-text`;
+- «кратко», «структурно», «без перегруза» — краткий режим;
+- «убери воду», «не пиши как нейросеть» — разбор по Neuroslop index;
+- `/ru-text:ru-check`, `/ru-text:ru-score` — команды.
 
-## Notes
+**Про «always-on».** Флаг `metadata.openclaw.always` понимает openclaw. В Claude Code и
+большинстве других харнессов скилл подключается по описанию, поэтому типографика применяется
+не ко всему выводу подряд, а начиная с момента, когда скилл загружен в разговор. Если нужна
+типографика по умолчанию — вызовите скилл в начале сессии или закрепите его настройками
+харнесса.
 
-This repository is a portable packaging of the `ru-text` skill. It does not claim endorsement from the authors and publishers listed in `references/sources.md`.
+## Границы
+
+Типографика правит прозу и не трогает машиночитаемые строки: код, пути, URL, версии, флаги
+команд, регулярные выражения, числа для CSV, JSON, YAML и SQL. Полный список — раздел
+«Do not touch (scope limits)» в `SKILL.md`. Чужие слова — цитаты и сторонние вставки —
+воспроизводятся как есть.
+
+## Лицензия
+
+MIT, см. [`LICENSE`](LICENSE). Лицензия распространяется на формулировки правил в этом
+репозитории; книги, статьи и инструменты из `sources.md` принадлежат их авторам и здесь не
+воспроизводятся. Репозиторий не заявляет одобрения со стороны перечисленных там авторов
+и издателей.
+
+История изменений — [`CHANGELOG.md`](CHANGELOG.md).

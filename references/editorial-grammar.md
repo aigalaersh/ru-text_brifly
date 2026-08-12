@@ -1,5 +1,9 @@
 # Editorial: Grammar and Style
 
+> Буквенная нумерация сквозная на два файла: разделы **A–B** (пунктуация) — в
+> `editorial-punctuation.md`, **C–K** — здесь. Чтобы ссылка была однозначной, пишите
+> `GRAM-C`…`GRAM-K` и `PUNCT-A`, `PUNCT-B`, а не просто «§B».
+
 ## Contents
 - [C. Capitalization](#c-capitalization)
 - [D. Agreement (syntactic concord)](#d-agreement-syntactic-concord)
@@ -18,7 +22,7 @@
 
 situation|upper/lower|example
 enumeration after generalizing word|lower|Привезли: молоток, пилу, рубанок.
-direct speech|upper|Он ответил: "Согласен".
+direct speech|upper|Он ответил: «Согласен».
 two independent sentences (journalistic)|upper allowed|Итог очевиден: Команда проиграла.
 list item after digit with period (1.)|upper|1. Подготовить документы.
 list item after digit/letter with bracket (1), а))|lower|а) подготовить документы;
@@ -26,8 +30,8 @@ list item after digit/letter with bracket (1), а))|lower|а) подготови
 ### C.2. Headings
 
 Russian does NOT use Title Case. Only first word and proper nouns are capitalized.
-- Correct: "Краткий курс теоретической механики"
-- Wrong: "Краткий Курс Теоретической Механики"
+- Correct: «Краткий курс теоретической механики»
+- Wrong: «Краткий Курс Теоретической Механики»
 
 ### C.3. Job titles and ranks
 
@@ -52,9 +56,9 @@ ellipsis at text start (continuation)|lower: …и тогда всё стало 
 
 ### C.6. Quotation marks and names
 
-1. First word inside quotation marks capitalized: роман "Война и мир"
+1. First word inside quotation marks capitalized: роман «Война и мир»
 2. Other words follow general rules (lowercase unless proper noun)
-3. Organizations: ООО "Ромашка", ПАО "Газпром"
+3. Organizations: ООО «Ромашка», ПАО «Газпром»
 
 ---
 
@@ -80,7 +84,7 @@ animate subject, separate actions emphasized|Большинство студен
 distance between subject and predicate|Ряд сотрудников, работающих в отделе, подали заявления.
 homogeneous predicates|Большинство вышли и присоединились.
 participial phrase / subordinate in plural|Часть студентов, которые не сдали, были отчислены.
-enumeration at subject|Большинство -- инженеры, врачи, учителя -- проголосовали.
+enumeration at subject|Большинство — инженеры, врачи, учителя — проголосовали.
 
 ### D.2. Numerals + noun
 
@@ -106,7 +110,7 @@ connector|rule|example
 
 ### D.4. Mixed gender
 
-Subjects of different gender joined by "и" -> plural predicate: Стол и лампа стояли.
+Subjects of different gender joined by «и» → plural predicate: Стол и лампа стояли.
 With inversion, singular by nearest is allowed: У окна стояла лампа и стол.
 
 ---
@@ -206,8 +210,8 @@ All items in one modality: all statements or all questions.
 start|case|ending|example
 after digit with period (1.)|upper|period|1. Подготовить документацию.
 after digit/letter with bracket 1) а)|lower|semicolon (last = period)|1) подготовить документацию;
-after bullet/dash|lower|semicolon (last = period)|-- подготовить документацию;
-item = full sentence|upper|period|-- Необходимо подготовить документацию.
+after bullet/dash|lower|semicolon (last = period)|— подготовить документацию;
+item = full sentence|upper|period|— Необходимо подготовить документацию.
 
 Period rule: period only if item is a full sentence (has subject and predicate). Fragments end with semicolon, last with period.
 
@@ -226,14 +230,14 @@ large round numbers|mixed|1,5 млн, 20 тыс.
 tables, formulas, statistics|digits|5, 12, 230
 monetary amounts in documents|digits + words in parens|150 000 (сто пятьдесят тысяч) руб.
 
-Approximation exception -- row "10+" only, narrative text only. Do not flag the word form when both hold: the numeral is rounded to a ten, hundred or thousand, and an approximation marker attaches to that numeral -- the counted noun fronted in the genitive it governs (минут десять), or one of около, примерно, где-то, под, с лишним, с небольшим.
+Approximation exception — row "10+" only, narrative text only. Do not flag the word form when both hold: the numeral is rounded to a ten, hundred or thousand, and an approximation marker attaches to that numeral — the counted noun fronted in the genitive it governs (минут десять), or one of около, примерно, где-то, под, с лишним, с небольшим.
 
-- Approximate -- words are correct: занимает минут десять; из шестидесяти с лишним замечаний
-- Exact -- row "10+" stands: запись хранится тридцать -> 30 суток; в двенадцати -> в 12 километрах
-- Bounds are not approximations (до, от, за, более, свыше, не менее): до сорока -> до 40 секунд
-- Labels are not counts: пункт двадцать, версия двадцать -- row "10+" stands
+- Approximate — words are correct: занимает минут десять; из шестидесяти с лишним замечаний
+- Exact — row "10+" stands: запись хранится тридцать → 30 суток; в двенадцати → в 12 километрах
+- Bounds are not approximations (до, от, за, более, свыше, не менее): до сорока → до 40 секунд
+- Labels are not counts: пункт двадцать, версия двадцать — row "10+" stands
 
-Never applies to large round numbers -- their row demands mixed form even under a marker (тысяч десять запросов -> 10 тыс. запросов) -- nor in tables, statistics or monetary amounts (last two rows), nor when the same value also stands in digits nearby -- there G.5 governs.
+Never applies to large round numbers — their row demands mixed form even under a marker (тысяч десять запросов → 10 тыс. запросов) — nor in tables, statistics or monetary amounts (last two rows), nor when the same value also stands in digits nearby — there G.5 governs.
 
 ### G.2. Ordinal numerals
 
@@ -245,7 +249,7 @@ correct|wrong
 3-е место|3ье, 3е
 5-го числа|5ого
 
-Suffix rule: if letter before last ending letter is vowel -- one-letter suffix (1-й, 2-я, 3-е, 5-м). If consonant -- two letters (2-го, 5-му).
+Suffix rule: if letter before last ending letter is vowel — one-letter suffix (1-й, 2-я, 3-е, 5-м). If consonant — two letters (2-го, 5-му).
 
 When listing ordinals, suffix only on last: 1, 2 и 3-й этажи (not 1-й, 2-й и 3-й).
 
@@ -257,8 +261,8 @@ in tables/forms|numeric|15.03.2026
 decades|with suffix|90-е годы (not 90-ые)
 centuries|Roman|XX век, XXI века
 time|colon|14:30, 09:00
-date range|dash no spaces|2020--2025, январь--март
-year range with г./гг.|with period|2020--2025 гг., в 2024 г.
+date range|dash no spaces|2020–2025, январь–март
+year range with г./гг.|with period|2020–2025 гг., в 2024 г.
 
 ### G.4. Phone numbers
 
@@ -277,15 +281,15 @@ Do not mix words and digits for same-type values within one sentence/paragraph.
 
 ## H. Clean language principles (inspired by the anti-bureaucratic tradition, cf. N. Gal, M. Ilyakhov)
 
-### H.1. Officialese (канцелярит) -- disease markers
+### H.1. Officialese (канцелярит) — disease markers
 
-1. Verbal nouns instead of verbs: "приняли решение" -> "решили"; "оказали помощь" -> "помогли"
-2. Genitive chains: "план мероприятий по обеспечению выполнения решений" -- unreadable
-3. Passive voice instead of active: "Доклад был заслушан" -> "Мы выслушали доклад"
-4. Split predicates: "произвести уборку" -> "убрать"; "осуществить проверку" -> "проверить"
+1. Verbal nouns instead of verbs: «приняли решение» → «решили»; «оказали помощь» → «помогли»
+2. Genitive chains: «план мероприятий по обеспечению выполнения решений» — unreadable
+3. Passive voice instead of active: «Доклад был заслушан» → «Мы выслушали доклад»
+4. Split predicates: «произвести уборку» → «убрать»; «осуществить проверку» → «проверить»
 5. Stacked participial/gerundial phrases make sentence impassable
 
-### H.2. Dead constructions -> live replacements
+### H.2. Dead constructions → live replacements
 
 Six of the entries below also stand in the stop-word catalogue of `info-style.md` §B — «в
 настоящее время», «вышеуказанный», «на сегодняшний день», «надлежащий», «нижеследующий»,
@@ -344,27 +348,27 @@ dead|live
 
 ### H.3. Translation traps leaking into Russian
 
-1. English passive -> Russian passive: "Было обнаружено, что..." -> "Выяснилось, что..." / "Мы обнаружили, что..."
-2. Noun-heavy English -> genitive chains: "Процесс принятия решения" -> "Как мы решаем"
-3. Redundant possessives: "Он положил свою руку в свой карман" -> "Он положил руку в карман"
-4. Calques: "Имеет смысл", "играет роль" -- acceptable but often displace better Russian alternatives
+1. English passive → Russian passive: «Было обнаружено, что...» → «Выяснилось, что...» / «Мы обнаружили, что...»
+2. Noun-heavy English → genitive chains: «Процесс принятия решения» → «Как мы решаем»
+3. Redundant possessives: «Он положил свою руку в свой карман» → «Он положил руку в карман»
+4. Calques: «Имеет смысл», «играет роль» — acceptable but often displace better Russian alternatives
 
 ### H.4. How officialese spreads
 
 1. Media retelling official documents transfers their style to articles
 2. Corporate correspondence infects work and personal writing
 3. Bureaucratic replies teach people to write the same way
-4. Desire to sound "weightier" -- long unclear phrase seems more "solid" than a simple word
+4. Desire to sound "weightier" — long unclear phrase seems more "solid" than a simple word
 
 ### H.5. Clean text rules
 
 1. Verb over noun: replace verbal nouns with verbs wherever possible
-2. Short sentence over long: if it does not fit in one breath -- too long
-3. Check genitive chains: more than two genitives in a row -- rewrite
+2. Short sentence over long: if it does not fit in one breath — too long
+3. Check genitive chains: more than two genitives in a row — rewrite
 4. Active voice by default: passive only when agent is unknown or irrelevant
-5. Concrete over abstract: "в рамках мероприятия" -> "на встрече"; "в сфере образования" -> "в школах"
-6. Use simple words: "сделать" not "реализовать"; "начать" not "приступить к осуществлению"
-7. Read aloud: if you stumble -- rewrite the sentence
+5. Concrete over abstract: «в рамках мероприятия» → «на встрече»; «в сфере образования» → «в школах»
+6. Use simple words: «сделать» not «реализовать»; «начать» not «приступить к осуществлению»
+7. Read aloud: if you stumble — rewrite the sentence
 
 ## I. Government (управление)
 

@@ -2,9 +2,12 @@
 name: ru-text
 description: >
   Russian text quality. Triggers: вычитай, проверь текст, поправь, отредактируй,
-  причеши, ru-text. Typography silently on any Russian output; deeper editing on
+  причеши, ru-text; кратко, структурно, без перегруза; убери воду, не пиши как
+  нейросеть, ИИ-стиль, нейрослоп. Typography on any Russian output; deeper editing on
   request. Info-style, editorial, UX writing, business correspondence, AI-text cleanup.
 metadata:
+  version: "1.1.0"
+  license: MIT
   openclaw:
     always: true
     emoji: "📝"
@@ -25,7 +28,9 @@ Credits and recommended reading: `references/sources.md`
 
 ## Always-On: Typography
 
-Apply to ALL Russian text output — silently: fix, don't announce.
+Apply to Russian **prose** output — silently: fix, don't announce. Prose means the running
+text of the answer, its headings, lists and table cells. It is not everything on the screen:
+the scope limits below come first and are not overridden by any row of this table.
 
 | Rule | Wrong | Correct |
 |---|---|---|
@@ -33,22 +38,42 @@ Apply to ALL Russian text output — silently: fix, don't announce.
 | Nested quotes: lapki | «"вложенные"» | «„вложенные“» |
 | Em dash with spaces | слово - слово | слово — слово |
 | En dash for ranges, no spaces | 10-15 дней | 10–15 дней |
-| NBSP after single-letter prepositions | в начале (breakable) | в\u00A0начале |
+| NBSP after single-letter words | `в начале` (обычный пробел) | `в` + U+00A0 + `начале` |
 | Ellipsis: single character | ... | … |
-| Digit groups with thin spaces | 1000000 | 1 000 000 |
+| Digit groups from 10 000 up | 25400 | 25 400 |
 | Decimal comma (not dot) | 3.14 | 3,14 |
 | Ordinal with hyphen | 1ый, 2ой | 1-й, 2-й |
 | Numero sign | No. 5, #5 | № 5 |
 | Abbreviations with NBSP | т.д., т.е. | т. д., т. е. |
 | Ruble symbol after number | 1500 руб | 1 500 ₽ |
 
+Single-letter words that take NBSP after them: **в, к, с, о, у, и, а, я** (R30). Four-digit
+numbers may stay unsplit unless larger numbers stand beside them (R34–R35). The percent sign is
+set solid — `100%`; the scientific-register exception is R37.
+
+**Do not touch (scope limits).** Typography goes into prose, never into a string that a machine
+reads:
+
+- code blocks, inline code, terminal commands and their flags (`--start 2026-08-01`);
+- URLs, file paths, file names, package and branch names, identifiers, regexes;
+- version numbers (`Python 3.12`), keys, hashes, IDs;
+- numbers inside data headed for CSV, JSON, YAML, SQL or a spreadsheet — a decimal comma or a
+  thin space there breaks the parse, and NBSP breaks `grep`, `diff` and imports;
+- quoted third-party text (see «Someone else's words stay theirs» above).
+
+Where prose and a machine-readable token meet in one sentence, the token wins: `выгрузка за
+10-15 дней` is prose and becomes `10–15`, but `--period 10-15` stays as typed. When in doubt,
+leave the token alone and say what you left.
+
 Full typography reference: `references/typography.md`
 
-`/ru-text:ru-score` — text quality score (0–10, 5 dimensions).
+Commands: `/ru-text:ru-check` — full check with the list of findings; `/ru-text:ru-score` —
+quality score (0–10, five dimensions). Both are in `commands/`.
 
-## Galina layer: кратко и структурно
+## Brief mode: кратко и структурно
 
-When the user asks for «кратко», «структурно», «без перегруха», «для СДВГ/ADHD», apply this extra layer after the base ru-text cleanup.
+When the user asks for «кратко», «структурно», «без перегруза», «для СДВГ/ADHD», apply this
+extra layer after the base ru-text cleanup.
 
 Core rules:
 
@@ -56,7 +81,9 @@ Core rules:
 2. One paragraph = one idea. For Telegram: 1–3 short lines per paragraph.
 3. Use semantic headings: «Вывод», «Что сделать», «Почему», «Риск», «Проверка». Avoid decorative headings like «Ключевые аспекты».
 4. Keep lists to 3–7 items. If there are more, group them: «Сейчас», «Потом», «Не делать».
-5. Remove self-praise about brevity: «коротко, без воды», «по делу», «сейчас разберём». Just write the point.
+5. Remove self-praise about brevity: «коротко, без воды», «по делу», «сейчас разберём». Just
+   write the point. This is AD-7 (`references/addenda-register.md`) — the wording there governs;
+   the line here only says the rule survives the shortening.
 6. Preserve numbers, conditions, risks, sources, owners and deadlines. Shorter must not mean less precise.
 7. Replace abstractions with visible actions: «оптимизировать коммуникацию» → «переписать письмо после заявки простым языком».
 8. End with the next action when the text is operational.
@@ -135,7 +162,10 @@ If the path is not resolved, search: `Glob("**/ru-text/references/scoring.md")` 
 | Finding and fixing text problems, diagnostics | anti-patterns.md |
 | Text scoring, quality assessment | scoring.md |
 | Credits, source attribution | sources.md |
-| Experience-based rules (dash overuse, etc.) | addenda.md |
+| Text reads as AI-written: «убери воду», «не пиши как нейросеть» | addenda.md (Neuroslop index) |
+| Dash rhythm, parcellation, comma-with-dash, caps | addenda-rhythm.md |
+| Assistant register: service replies, hollow openers, declared sincerity | addenda-register.md |
+| Empty form: false antithesis, tricolon, phantom attribution, SEO addressee | addenda-substance.md |
 
 ## Quality Checklist
 
@@ -143,7 +173,7 @@ Before delivering Russian text:
 
 - [ ] Quotes: «» primary, „“ nested
 - [ ] Dashes: — in text, – in ranges, - only in compounds; max 1–2 per paragraph (a parallel row counts as one, dialogue dashes as none); trim to the limit, not to zero; edit a row whole or not at all
-- [ ] NBSP after в, к, с, о, у, и, а
+- [ ] NBSP after в, к, с, о, у, и, а, я
 - [ ] Ellipsis: … (single char)
 - [ ] Abbreviations: т. д., т. п. (with NBSP)
 - [ ] No double spaces, no space before punctuation
