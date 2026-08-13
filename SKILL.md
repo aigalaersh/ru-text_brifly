@@ -1,13 +1,11 @@
 ---
 name: ru-text
-description: >
-  Russian text quality. Triggers: вычитай, проверь текст, поправь, отредактируй,
-  причеши, ru-text; кратко, структурно, без перегруза; убери воду, не пиши как
-  нейросеть, ИИ-стиль, нейрослоп. Typography on any Russian output; deeper editing on
-  request. Info-style, editorial, UX writing, business correspondence, AI-text cleanup.
+description: "Russian text quality: typography, editing, info-style, UX writing, business correspondence, AI-text cleanup. Triggers: вычитай, проверь текст, поправь, отредактируй, причеши, ru-text; кратко, структурно, без перегруза; убери воду, не пиши как нейросеть, ИИ-стиль, нейрослоп."
+user-invocable: true
+argument-hint: "[текст или путь к файлу]"
+license: MIT
 metadata:
   version: "1.1.0"
-  license: MIT
   openclaw:
     always: true
     emoji: "📝"
