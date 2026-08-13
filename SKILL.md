@@ -5,11 +5,9 @@ user-invocable: true
 argument-hint: "[текст или путь к файлу]"
 license: MIT
 metadata:
-  version: "1.1.0"
-  openclaw:
-    always: true
-    emoji: "📝"
-    homepage: "https://ru-text.org"
+  author: "Arseniy Kamyshev"
+  version: "1.1.1"
+  category: writing
 ---
 
 # ru-text — Russian Text Quality
