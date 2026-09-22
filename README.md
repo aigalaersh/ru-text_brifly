@@ -23,7 +23,7 @@ UX-writing, деловая переписка, диагностика нейро
 | `references/scoring.md` | рубрика оценки |
 | `references/addenda.md` | индекс свода AD: Neuroslop index и маршрутизация |
 | `references/addenda-rhythm.md` | AD-1, AD-2, AD-17, AD-18 — ритм, пунктуация, знаки |
-| `references/addenda-register.md` | AD-3, AD-4, AD-7…AD-10, AD-14 — регистр ассистента |
+| `references/addenda-register.md` | AD-3, AD-4, AD-7…AD-10, AD-14, AD-19, AD-20 — регистр ассистента и жанр документа |
 | `references/addenda-substance.md` | AD-5, AD-6, AD-11…AD-13, AD-15, AD-16 — пустота под формой |
 | `references/sources.md` | атрибуция и что читать дальше |
 

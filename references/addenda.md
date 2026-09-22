@@ -15,7 +15,7 @@ additions.
 | Файл | О чём | Записи |
 |---|---|---|
 | `addenda-rhythm.md` | ритм, пунктуация, знаки | AD-1, AD-2, AD-17, AD-18 |
-| `addenda-register.md` | регистр ассистента | AD-3, AD-4, AD-7, AD-8, AD-9, AD-10, AD-14 |
+| `addenda-register.md` | регистр ассистента и жанр документа | AD-3, AD-4, AD-7, AD-8, AD-9, AD-10, AD-14, AD-19, AD-20 |
 | `addenda-substance.md` | пустота под формой | AD-5, AD-6, AD-11, AD-12, AD-13, AD-15, AD-16 |
 
 Ссылки вида «AD-7.4 (`addenda.md`)» в других файлах ведут сюда: запись ищется по таблице ниже.
@@ -42,6 +42,8 @@ additions.
 | AD-16 | Additive pseudo-pair («не только X, но и Y») | `addenda-substance.md` |
 | AD-17 | Comma welded to a dash (запятая, сомкнутая с тире) | `addenda-rhythm.md` |
 | AD-18 | Uppercase band vs. deliberate emphasis (капслок: полоса против выделения) | `addenda-rhythm.md` |
+| AD-19 | Conversational register in a reference document (разговорный регистр в справочном документе) | `addenda-register.md` |
+| AD-20 | Reference document as a chronicle (справочный документ как летопись) | `addenda-register.md` |
 
 ## Neuroslop index
 

@@ -6,7 +6,7 @@ argument-hint: "[текст или путь к файлу]"
 license: MIT
 metadata:
   author: "Arseniy Kamyshev"
-  version: "1.1.1"
+  version: "1.2.0"
   category: writing
 ---
 
@@ -161,6 +161,7 @@ If the path is not resolved, search: `Glob("**/ru-text/references/scoring.md")` 
 | Text reads as AI-written: «убери воду», «не пиши как нейросеть» | addenda.md (Neuroslop index) |
 | Dash rhythm, parcellation, comma-with-dash, caps | addenda-rhythm.md |
 | Assistant register: service replies, hollow openers, declared sincerity | addenda-register.md |
+| Documentary genres: regulation, instruction, specification, reference description | addenda-register.md (AD-19, AD-20) |
 | Empty form: false antithesis, tricolon, phantom attribution, SEO addressee | addenda-substance.md |
 
 ## Quality Checklist

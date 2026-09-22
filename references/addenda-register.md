@@ -1,6 +1,7 @@
 # Addenda: регистр ассистента
 
-Сервисные реплики, пустые зачины, объявленная искренность, разжёвывание, диалог вместо текста.
+Сервисные реплики, пустые зачины, объявленная искренность, разжёвывание, диалог вместо
+текста, разговорный регистр и летопись в справочном документе.
 
 Часть свода `addenda.md`. Индекс, Neuroslop index и два правила, управляющие всеми остальными, — там же; читать их до применения любой записи ниже.
 
@@ -383,3 +384,127 @@ AD-14.7 (carve-out — the transcript was what was asked for). Where the user's 
 
 
 ---
+
+## AD-19. Conversational register in a reference document (разговорный регистр в справочном документе)
+
+**Problem:** a reference document — a regulation, an instruction, a specification, a description of how a system works — is written in the register of a chat reply. The defect shows in four families: filler particles that carry no increment («вовсе», «просто», «как раз», «вообще»); conversational asides about the reading itself («стоит задержаться», «соблазн велик», «и вот почему»); first-person narration of the author's own process («мы просим модель», «мы её проверили и отказались», «наши статьи»); and a rhetorical setup sentence that postpones the fact («Проблема, которую она решает, звучит просто», «Это самая новая часть»). None of the four is wrong in a letter or a chat answer. In a document that a stranger will open in a year, each one costs the reader a sentence and returns nothing.
+
+The genre decides, not the topic. The same sentence is right in a message to a colleague and wrong in the regulation that message is about.
+
+**Sources:**
+- Register scale and the conversational carve-out: `info-style.md` §F
+- Main point first, first sentence as thesis: `info-style.md` §D
+- Independently formulated from editorial practice on project documentation
+
+**Trigger constructions:**
+
+- filler particles with no increment: «вовсе», «просто», «как раз», «вообще», «прямо», «ровно» — where deleting the word changes nothing;
+- self-praise about brevity or directness: «коротко», «если коротко», «по делу» — see AD-7, count once there;
+- asides about the act of reading: «стоит задержаться», «ради него стоит задержаться», «соблазн велик», «и вот почему», «поучительно»;
+- evaluative comment on the material: «прекрасно работает», «приятный побочный эффект», «ловушка, на которую ушёл прогон»;
+- first-person plural as the actor where the actor is the system or the procedure: «мы просим модель», «мы забираем разметку», «наш словарь»;
+- a setup sentence whose only content is that an explanation follows.
+
+**Rules:**
+
+AD-19.1. Apply in the **documentary genres**: regulation, instruction, specification, reference description, report, manual. Do not apply to letters, chat replies, posts, blogs or interface text — those have their own registers (`ux-writing.md`, `business-writing.md`, `info-style.md` §F).
+
+AD-19.2. Flag a word or clause that (1) belongs to one of the four families above and (2) carries zero increment: deleting it loses no fact and the sentence still stands. A particle that does carry meaning stays — «просто» in «просто число, без единиц» is a predicate, not a filler.
+
+AD-19.3. Replace first-person narration with the actor that performs the action. «Мы просим модель вынуть понятия» → «Система запрашивает у модели перечень понятий». The actor must be named: a passive construction that hides it is a different defect (`info-style.md` §B).
+
+AD-19.4. Rewrite a rhetorical setup by deleting it and promoting the fact. «Проблема, которую она решает, звучит просто. В MeSH нет русских названий» → «В словаре MeSH нет русских названий».
+
+AD-19.5 (single-count with AD-7 and AD-9). «Коротко», «без воды», «по делу» are charged to AD-7; «давайте разберёмся», «важно понимать» to AD-9. AD-19 adds the particle family, the reading-aside family and first-person narration, and applies the genre condition. Never charge one fragment twice.
+
+AD-19.6 (carve-out — the document addresses its own reader). «Документ предназначен для редактора», «раздел приведён для полноты описания» state the document's scope and are not asides: they carry a fact about the document itself.
+
+AD-19.7 (carve-out — «мы» as the organisation). «Мы не показываем статьи других издательств» in a policy statement, where the first person names the organisation bound by the rule, is acceptable. The target is «мы» narrating the author's working process.
+
+AD-19.8 (carve-out — quoted speech). A quoted decision («довод владельца проекта: статья ничего не ждёт») keeps its register: someone else's words stay theirs.
+
+**Examples:**
+
+| Wrong | Correct |
+|---|---|
+| Это самая новая часть, и она появилась в сентябре. | (delete; open with what the part does) |
+| Проблема, которую она решает, звучит просто. | (delete; state the problem) |
+| Мы просим модель вынуть из текста понятия. | Система запрашивает у модели перечень понятий. |
+| В расчёте система в интернет не ходит вовсе. | Во время расчёта система к сети не обращается. |
+| Это ядро работы, и ради него стоит задержаться. | (delete; the heading already says what follows) |
+| Способ прекрасно работает по-английски. | Способ применим к английскому тексту. |
+| Соблазн велик: карточки можно принять пачкой. | Групповое подтверждение карточек не применяется. |
+
+**Counter-examples (do NOT flag):**
+
+| Acceptable | Reason |
+|---|---|
+| Документ предназначен для редактора издательства. | States the document's scope (AD-19.6). |
+| Мы не показываем статьи других издательств. | «Мы» names the organisation bound by the rule (AD-19.7). |
+| Просто число, без единиц измерения. | «Просто» is a predicate, not a filler (AD-19.2). |
+| Коротко: сервер не отвечает. | Chat reply, not a documentary genre (AD-19.1). |
+
+**Severity:** Medium. Primary signal in the **Ц — Reader precision** dimension (supporting **Ч — Clarity**): the register is addressed to the wrong reader. A cluster of four or more instances in one document lands Ц in the 5–6 band; isolated instances do not. Cannot trigger non-compensatory caps alone.
+
+**Acknowledged:** identified in editorial practice on project documentation (2026-09), where a reference description written in chat register was rewritten to the documentary one.
+
+
+---
+
+---
+
+## AD-20. Reference document as a chronicle (справочный документ как летопись)
+
+**Problem:** a document meant to describe the current state describes instead how that state came about. Four forms: a history of revisions inside the text («в сентябре здесь нашлась ошибка», «раньше было иначе», «правило сняли»); rejected options discussed inline among the applied ones; figures that measure today's data rather than the described mechanism; and cross-references that make the document unreadable on its own («подробности — в `term-lexicon.md`»). A reader who opens the document to learn how something works has to separate what is true now from what was true once, what is applied from what was rejected, and what is the rule from what is this week's measurement.
+
+**Sources:**
+- Main point first, first sentence as thesis: `info-style.md` §D
+- Reader precision and the addressee: `scoring.md`, dimension Ц
+- Independently formulated from editorial practice on project documentation
+
+**Trigger constructions:**
+
+- dated narration of changes: «в сентябре», «недавно», «раньше», «теперь стало», «мы отказались»;
+- a section titled «Что изменилось» inside a description of how something works;
+- a rejected approach explained in the main flow, with its reasoning, beside the applied one;
+- counts, shares and totals taken from the current data set rather than from the described rule;
+- «подробности — в <файл>», «разбор — в <файл>» where the fact itself is not given.
+
+**Rules:**
+
+AD-20.1. Apply in the **documentary genres** (as AD-19.1). A changelog, a release note, a post-mortem and a project plan are chronicles by genre and are not flagged.
+
+AD-20.2. Remove the history of revisions. The document states what holds now. If the reader needs the history, it lives in a changelog with its own dates.
+
+AD-20.3. Move rejected options to an appendix, together with the grounds for rejection. The main text describes what is applied; the appendix answers «почему не иначе».
+
+AD-20.4. Keep a figure only if it describes the mechanism: a threshold, a weight, the size of a reference book, a proportion that determined a decision. Remove a figure that measures the current data set — it goes stale between readings, and the reader cannot tell the two kinds apart.
+
+AD-20.5. A reference document is self-contained. A cross-reference may point further, never stand in place of the fact: state the fact, then point. The test — a reader with no access to the other files loses nothing essential.
+
+AD-20.6 (carve-out — the history is the subject). A document about how a decision was taken, a post-mortem, an architectural record (ADR): there the reasoning and the rejected options are the content, and the appendix rule does not apply.
+
+AD-20.7 (carve-out — an example needs a figure). «Пара со значением 0,03 оказывается выше 92 % остальных» illustrates the mechanism rather than measuring the corpus, and stays.
+
+**Examples:**
+
+| Wrong | Correct |
+|---|---|
+| Это самая новая часть, она появилась 22 сентября. | (delete the dating; describe the part) |
+| В сентябре здесь нашлась ошибка, из-за которой пропала разметка. | (delete; state the rule that applies now) |
+| Из 1102 статей корпуса такую разметку получили 304. | (delete; the proportion is a property of the data, not of the rule) |
+| Подробный разбор с числами — в `term-lexicon.md`. | Охват классификации — 19,8 % словаря. |
+| Мы проверили МКБ и отказались от неё. Причина — в охвате. | (move to the appendix «Проверенные и отклонённые решения») |
+
+**Counter-examples (do NOT flag):**
+
+| Acceptable | Reason |
+|---|---|
+| Наибольшая длина списка — 10. | A threshold of the mechanism (AD-20.4). |
+| В словаре болезни занимают 19,8 % понятий. | A property of the reference book that determined the choice (AD-20.4). |
+| Пара со значением 0,03 оказывается выше 92 % остальных. | Illustration of the mechanism (AD-20.7). |
+| ADR: рассмотрены три варианта, выбран второй. | The reasoning is the subject of the genre (AD-20.6). |
+
+**Severity:** Medium. Primary signal in the **С — Structure** dimension (supporting **Ц — Reader precision**): the document is assembled for the wrong question. A document that narrates its own revision history in the main text does not reach the upper Structure bands. Cannot trigger non-compensatory caps alone.
+
+**Acknowledged:** identified in editorial practice on project documentation (2026-09), where a description of a working system accumulated the history of its own edits and the options rejected along the way.
